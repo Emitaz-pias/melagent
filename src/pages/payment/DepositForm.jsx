@@ -14,6 +14,7 @@ const DepositForm = () => {
   const [success, setSuccess] = useState(false);
 
   const createSheetData = async (data) => {
+    console.log(data,'is ready to go')
     try {
       const response = await fetch('https://sheetdb.io/api/v1/9km3fd96013ec', {
         method: 'POST',
@@ -22,25 +23,38 @@ const DepositForm = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          data: [data],
+          data: [
+            {
+              'agentId': data.agentId,
+              "depositType": data.depositType,
+              "depositedAmount": data.depositedAmount,
+              "selectChain": data.selectChain,
+              "transactionId": data.transactionId,
+              
+            },
+          ],
         }),
       });
+  
       const result = await response.json();
+  
       if (result.created === 1) {
         setSuccess(true);
+        
+        // Resetting form data
         setFormData({
-          agetIdagentId: '',
+          agentId: '',
           depositType: '',
-          selectChain: '',
           depositedAmount: '',
-          transactionId: '',
+          selectChain: '',
+          transactionId: '',         
         });
       }
     } catch (error) {
       alert('An error occurred while submitting the form: ' + error.message);
     }
   };
-
+  
   const validateForm = () => {
     let formErrors = {};
     if (!formData.agentId) formErrors.agentId = 'Agent User ID is required';
@@ -56,7 +70,7 @@ const DepositForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      createSheetData(formData);
+      createSheetData(formData)    
     }
   };
 
