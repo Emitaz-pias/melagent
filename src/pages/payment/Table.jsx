@@ -6,7 +6,7 @@ const SimpleTable = () => {
   const [copied, setCopied] = useState({}); // Store which row and field was copied
 
   const rows = [
-    { name: 'USDT (TRC-20)', address: 'TKNz4RRiaGUegAwMjaXZtng79KK8DShwfP' },
+    { name: 'USDT (TRC-20)', address: 'TQcFAoFE9nMsPvjjRqEHmPZiB4Ag8xeEJq' },
     { name: 'USDT (BEP-20)', address: '0xaA739a9C4646ddfbA9C6f04d69852a863B6f5875' },
     { name: 'BTC', address: 'bc1qgnatat57gaqkpaa6tz4u2awywmvaad46qkm990' },
     { name: 'ETH', address: '0xaA739a9C4646ddfbA9C6f04d69852a863B6f5875' },
