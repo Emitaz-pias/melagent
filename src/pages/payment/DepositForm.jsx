@@ -15,7 +15,7 @@ const DepositForm = () => {
 
   const createSheetData = async (data) => {
     try {
-      const response = await fetch('https://sheetdb.io/api/v1/dhuvkm64l71xl', {
+      const response = await fetch('https://sheetdb.io/api/v1/9km3fd96013ec', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -29,7 +29,7 @@ const DepositForm = () => {
       if (result.created === 1) {
         setSuccess(true);
         setFormData({
-          agentId: '',
+          agetIdagentId: '',
           depositType: '',
           selectChain: '',
           depositedAmount: '',
