@@ -1,0 +1,30 @@
+.becomeAgentBttton:hover{
+  background: #FEBD02 !important;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000 ;
+  text-shadow: 0 2px 0 #FFCF44;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list {
+background-color:#212121 !important;
+color:white !important
+}
+#something{
+  border: 1px solid red !important;
+}
+.ReactFlagsSelect-module_selectBtn__19wW7{
+    border: none !important;
+    color: white !important;
+    font-weight: bolder !important;
+}
+.ReactFlagsSelect-module_selectOptions__3LNBJ{
+  background-color: #212121 !important;
+}
+.ReactFlagsSelect-module_selectOption__3pcgW:hover, .ReactFlagsSelect-module_selectOption__3pcgW:focus{
+  background-color: #3e3c3c;
+  color: white !important;
+}
