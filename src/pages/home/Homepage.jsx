@@ -13,7 +13,7 @@ import './SubmitForm'
 import SubmitForm from './SubmitForm'
 import { useRef } from 'react';
 import { AppContext } from '../../AppContext';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import FormModal from '../../components/modal/FormModal'
 import PointsSlider from './PointsSlider';
 
