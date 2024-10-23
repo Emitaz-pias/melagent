@@ -14,45 +14,44 @@ const DepositForm = () => {
   const [success, setSuccess] = useState(false);
 
   const createSheetData = async (data) => {
-    console.log(data,'is ready to go')
-    try {
-      const response = await fetch('https://sheetdb.io/api/v1/9km3fd96013ec', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          data: [
-            {
-              'agentId': data.agentId,
-              "depositType": data.depositType,
-              "depositedAmount": data.depositedAmount,
-              "selectChain": data.selectChain,
-              "transactionId": data.transactionId,
+    // try {
+    //   const response = await fetch('https://sheetdb.io/api/v1/9km3fd96013ec', {
+    //     method: 'POST',
+    //     headers: {
+    //       Accept: 'application/json',
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       data: [
+    //         {
+    //           'agentId': data.agentId,
+    //           "depositType": data.depositType,
+    //           "depositedAmount": data.depositedAmount,
+    //           "selectChain": data.selectChain,
+    //           "transactionId": data.transactionId,
               
-            },
-          ],
-        }),
-      });
+    //         },
+    //       ],
+    //     }),
+    //   });
   
-      const result = await response.json();
+    //   const result = await response.json();
   
-      if (result.created === 1) {
-        setSuccess(true);
+    //   if (result.created === 1) {
+    //     setSuccess(true);
         
-        // Resetting form data
-        setFormData({
-          agentId: '',
-          depositType: '',
-          depositedAmount: '',
-          selectChain: '',
-          transactionId: '',         
-        });
-      }
-    } catch (error) {
-      alert('An error occurred while submitting the form: ' + error.message);
-    }
+    //     // // Resetting form data
+    //     // setFormData({
+    //     //   agentId: '',
+    //     //   depositType: '',
+    //     //   depositedAmount: '',
+    //     //   selectChain: '',
+    //     //   transactionId: '',         
+    //     // });
+    //   }
+    // } catch (error) {
+    //   alert('An error occurred while submitting the form: ' + error.message);
+    // }
   };
   
   const validateForm = () => {
