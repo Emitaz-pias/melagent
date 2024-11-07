@@ -8,7 +8,6 @@ import coinHands from '../../images/coinHands.png'
 import submitApplication from '../../images/submitApplication.png'
 import website from '../../images/website.png'
 import email from '../../images/email.png'
-import logo from '../../images/logo.png'
 import './SubmitForm'
 import SubmitForm from './SubmitForm'
 import { useRef } from 'react';
@@ -187,7 +186,7 @@ document.title =  translations.homepage.title
         </Grid>
     
          <Box sx={{ display: 'inline-flex', marginTop:{lg:'-7em'},justifyContent:{lg:'space-around',xs:'center'},alignItems:'center',flexWrap:{lg:'nowrap',xs:'wrap'} }}>
-            <Box component='img' sx={{ width:{lg:'25%',xs:'30%'} }} src={logo}></Box>
+         <Box fontSize='2.5em' fontWeight={'bold'} fontStyle={'italic'} > <Box component={'span'} color={'#FEBD02'}> MEL</Box><Box component={'span'}>BET</Box> </Box>
              <Box  component="p" sx={{ margin: '0.8em',textAlign:'center' }}>
               {translations.homepage.footer1}
              <br />
