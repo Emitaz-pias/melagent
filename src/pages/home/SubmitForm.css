@@ -1,0 +1,93 @@
+.inps{
+    margin-top: 1.3em !important;
+}
+.MuiFormLabel-root-MuiInputLabel-root{
+    color:#FEBD02 !important;
+    background: #212121 !important;
+    position: relative !important;
+    z-index: 2 !important;
+    width: fit-content !important;
+    margin-left: 6px !important;
+    margin-top:1px !important;
+}
+.MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    transform: none !important;
+}
+.MuiInputLabel-root{
+    color:#FEBD02 !important;
+    background: #212121 !important;
+    position: absolute !important;
+    z-index: 2 !important;
+    width: fit-content !important;
+    left: 0.8em !important;
+    top:-0.7em !important; 
+    transform: none !important;
+}
+
+.MuiFormLabel-root-MuiInputLabel-root{
+    color:#FEBD02 !important;
+    transform: none !important;    
+}
+.MuiInputLabel-root.Mui-focused{
+    color:#FEBD02 !important;
+    transform: none !important;    
+}
+.MuiInputBase-input-MuiOutlinedInput-input{
+    color: gray !important;
+    height: 0.45em !important;   
+}
+.MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color:#FEBD02 !important;
+    transform: none !important;
+}
+.MuiOutlinedInput-notchedOutline{
+    border-color: #FEBD02 !important;
+}
+.MuiInputBase-input-MuiOutlinedInput-input{
+    color: gray !important;
+    opacity: 1;
+}
+.MuiInputBase-root-MuiOutlinedInput-root{
+margin-top: 0.15rem;
+opacity: 1;
+}
+.MuiInputBase-input::placeholder {
+    color: gray !important;
+    opacity: 1 !important;
+}
+
+/* Keep placeholder visible when focused */
+.MuiInputBase-input:focus::placeholder {
+    opacity: 1 !important; /* Ensure the placeholder remains fully visible */
+}
+/* Ensure placeholder remains visible even with label */
+.MuiFormLabel-root.MuiInputLabel-root + .MuiInputBase-root .MuiInputBase-input::placeholder {
+    opacity: 1 !important; /* Ensure the placeholder remains fully visible */
+}
+.MuiButtonBase-root-MuiRadio-root.Mui-checked{
+    color: #FEBD02 !important;
+}
+.MuiTypography-root {
+color:  #FEBD02!important;
+}
+.MuiButtonBase-root-MuiRadio-root {
+    color: #FEBD02 !important;
+}
+.css-ahj2mt-MuiTypography-root{
+    color: #FEBD02 !important;
+}
+.error-message{
+    color: #FF4040;
+    margin-left:1em;
+    padding-top: 0.5em !important;
+}
+/* .wpcf7-form label {
+    color: #FEBD02;
+    padding: 0 10px;
+    background: #212121;
+    margin-bottom: -7px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+} */

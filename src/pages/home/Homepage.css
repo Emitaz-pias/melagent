@@ -1,0 +1,66 @@
+.first-screen__title{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #FEBD02;
+    margin: 0 0 12px;
+}
+
+/* .inps{
+    margin-top: 1em !important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+    color:#FEBD02 !important;
+    background: #212121 !important;
+    position: relative !important;
+    z-index: 2 !important;
+    width: fit-content !important;
+    margin-left: 6px !important;
+    margin-top:1px !important;  
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root{
+    color:#FEBD02 !important;
+
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+    color: gray !important;
+    height: 0.45em !important;   
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color:#FEBD02 !important;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+    border-color: #FEBD02 !important;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+margin-top: 0.15rem;
+}
+.MuiInputBase-input::placeholder {
+    color: gray !important;
+    opacity: 1 !important;
+}
+/* 
+
+.MuiInputBase-input:focus::placeholder {
+    opacity: 1 !important; 
+}
+/
+.MuiFormLabel-root.MuiInputLabel-root + .MuiInputBase-root .MuiInputBase-input::placeholder {
+    opacity: 1 !important; 
+/* .css-vqmohf-MuiButtonBase-root-MuiRadio-root {
+    color: #FEBD02 !important;
+}
+.css-ahj2mt-MuiTypography-root{
+    color: #FEBD02 !important;
+
+}
+.error-message{
+    color: #FF4040;
+    margin-left:1em;
+    padding-top: 0.5em !important;
+}  */
+/* .MuiInputLabel-root.Mui-focused{
+    color:#FEBD02 !important;
+} */
