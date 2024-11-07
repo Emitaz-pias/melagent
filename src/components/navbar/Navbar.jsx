@@ -11,7 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.png'
+// import logo from '../../images/logo.png'
 import ReactFlagsSelect from 'react-flags-select';
 import './Navbar.css'
 import { AppContext } from '../../AppContext';
@@ -179,8 +179,9 @@ const scrollToViewAndCloseMenu = (scrollToFunction, onCloseFunction) => {
               variant="h3"
               component="div"
             >
-              <Link style={{ textDecoration: "none", color: 'black' }} to='/'>
-            <Box component={'img'} sx={{ width: { xs: '2em', lg: '2.8em' }, paddingBottom: { lg: '0.1em',xs:"0.2em" } }} src={logo} alt="logo" />
+              <Link style={{ textDecoration: "none", color: 'WHITE' }} to='/'>
+              <Box fontWeight={'bold'} fontStyle={'italic'} > <Box component={'span'} color={'#FEBD02'}> MEL</Box><Box component={'span'}>BET</Box> </Box>
+            {/* <Box component={'img'} sx={{ width: { xs: '2em', lg: '2.8em' }, paddingBottom: { lg: '0.1em',xs:"0.2em" } }} src={logo} alt="logo" /> */}
               </Link>
             </Typography>
 
