@@ -13,12 +13,18 @@ import SubmitForm from './SubmitForm'
 import { useRef } from 'react';
 import { AppContext } from '../../AppContext';
 // import { Link } from 'react-router-dom';
+import newLogo from '../../images/newlogo.png'
 import FormModal from '../../components/modal/FormModal'
 import PointsSlider from './PointsSlider';
-
+import { Helmet } from 'react-helmet';
 
 
 const Homepage = () => {
+  <Helmet>
+    <title>Melbet Agentship</title>
+    <meta name="description" content="What is a melbet agent?How to get  Melbet agentship?Stay with Melbet agent and melbetagentship.com" />
+    <meta name="keywords" content="MelbetAgents,Agents,EWalletAgents,Mobcash,MelbetAgent,MelbetSupport" />
+  </Helmet>
   const {language} = useContext(AppContext);   
   const translations = require(`../../translations/${language.toLowerCase()}.json`);
   const aboutUsRef = useRef(null);
@@ -171,9 +177,9 @@ document.title =  translations.homepage.title
           <h1 className='first-screen__title'>{translations.homepage.heading6}</h1>
           <ul>
             <li style={{ listStyle: 'none', padding: '1em' }} ><Box sx={{ display: 'flex', alignItems: 'center' }}> <Box component='img' sx={{ width:{lg:'5%',xs:'10%'} }} src={website}></Box><Box component="p" sx={{ margin: '1em' }}> <u>melbet.com</u></Box></Box></li>
-            <li style={{ listStyle: 'none', padding: '1em' }} ><Box sx={{ display: 'flex',alignItems: 'center' }}><Box component='img' sx={{ width:{lg:'5%',xs:'10%'},height:{lg:'6%',xs:'9%'} }} src={email}></Box> <Box component="p" sx={{ margin: '1em' }}><u>melbetagent.com</u> </Box></Box> </li>
-            <li style={{ listStyle: 'none', padding: '1em' }} ><Box sx={{ display: 'flex',alignItems: 'center' }}><Box component='img' sx={{ width:{lg:'5%',xs:'10%'},height:{lg:'6%',xs:'9%'} }} src={email}></Box> <Box component="p" sx={{ margin: '1em',zIndex:1 }}><u>manager@melbetagent.com</u> </Box></Box> </li>
-            {/* <li style={{ listStyle: 'none', padding: '1em' }} ><Box sx={{ display: 'flex',alignItems: 'center' }}><Box component='img' sx={{ width:{lg:'5%',xs:'10%'},height:{lg:'6%',xs:'9%'} }} src={email}></Box> <Box component="p" sx={{ margin: '1em',zIndex:1 }}><u>team@melbetagent.com</u> </Box></Box> </li> */}
+            <li style={{ listStyle: 'none', padding: '1em' }} ><Box sx={{ display: 'flex',alignItems: 'center' }}><Box component='img' sx={{ width:{lg:'5%',xs:'10%'},height:{lg:'6%',xs:'9%'} }} src={email}></Box> <Box component="p" sx={{ margin: '1em' }}><u>melbetagentship.com</u> </Box></Box> </li>
+            <li style={{ listStyle: 'none', padding: '1em' }} ><Box sx={{ display: 'flex',alignItems: 'center' }}><Box component='img' sx={{ width:{lg:'5%',xs:'10%'},height:{lg:'6%',xs:'9%'} }} src={email}></Box> <Box component="p" sx={{ margin: '1em',zIndex:1 }}><u>manager@melbetagentship.com</u> </Box></Box> </li>
+            {/* <li style={{ listStyle: 'none', padding: '1em' }} ><Box sx={{ display: 'flex',alignItems: 'center' }}><Box component='img' sx={{ width:{lg:'5%',xs:'10%'},height:{lg:'6%',xs:'9%'} }} src={email}></Box> <Box component="p" sx={{ margin: '1em',zIndex:1 }}><u>team@melbetagentship.com</u> </Box></Box> </li> */}
           </ul>           
           <Box   component="img" src={submitApplication} sx={{ width: '100%', marginTop:{lg:'-12em'},marginLeft:{lg:'4em'}}} />                          
         </Grid>
@@ -186,7 +192,7 @@ document.title =  translations.homepage.title
         </Grid>
     
          <Box sx={{ display: 'inline-flex', marginTop:{lg:'-7em'},justifyContent:{lg:'space-around',xs:'center'},alignItems:'center',flexWrap:{lg:'nowrap',xs:'wrap'} }}>
-         <Box fontSize='2.5em' fontWeight={'bold'} fontStyle={'italic'} > <Box component={'span'} color={'#FEBD02'}> MEL</Box><Box component={'span'}>BET</Box> </Box>
+         {/* <Box fontSize='2.5em' fontWeight={'bold'} fontStyle={'italic'} > <Box component={'span'} color={'#FEBD02'}> MEL</Box><Box component={'span'}>BET</Box> </Box> */}
              <Box  component="p" sx={{ margin: '0.8em',textAlign:'center' }}>
               {translations.homepage.footer1}
              <br />
