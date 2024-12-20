@@ -1,17 +1,13 @@
 // import { Box } from '@mui/material';
 // import React, { useState } from 'react';
 // import PaymentNavbar from './PaymentNavbar'
-// import SelectTabs from './Tabs';
-// import DepositForm from './DepositForm';
+
 // const PayementPage = () => {
-//     const [reveal,setReveal] =useState(false)
 
 //     return (
 //         <Box sx={{backgroundColor:'white'}}>
 //         <PaymentNavbar/>       
-//         <Box  component={'h1'} >Crypto Top-up</Box>
-//         <Box textAlign={'center'} onClick={() => setReveal(!reveal)}  sx={{cursor:'pointer',textDecoration:'underline'}} component={'h5'} color='blue'  >Click To Reveal Wallets</Box>
-//         {reveal?<SelectTabs/>:<DepositForm/>}
+
         
 //         </Box>
 //     );
@@ -27,20 +23,21 @@ import {
   TextField,
   Button,
   Card,
- 
+ Grid,
   CardContent,
   Modal,
   IconButton,
   Alert,
 } from "@mui/material";
-import Grid from '@mui/material/Grid2';
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import PaymentNavbar from "./PaymentNavbar";
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import { FaEthereum } from "react-icons/fa";
-
+import SelectTabs from './Tabs';
+import DepositForm from './DepositForm';
 const PaymentPage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [reveal,setReveal] =useState(false)
   const [playerId, setPlayerId] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -145,30 +142,13 @@ const PaymentPage = () => {
           </Button>
         </Box>
       ) : (
-        <Box sx={{ mt: 2, mb: 2 }}>
-          <Typography variant="h4" gutterBottom>
-            Payment Options
-          </Typography>
-          <Grid container spacing={2}>
-            {paymentOptions.map((option, index) => (
-              <Grid  size={{xs:12}} key={index}>
-                <Card
-                  onClick={() => handlePaymentClick(option.address)}
-                  sx={{
-                    cursor: "pointer",
-                    "&:hover": { backgroundColor: "#f5f5f5" },
-                  }}
-                >
-                  <CardContent>
+        <Box sx={{backgroundColor:'gray',padding:'0.5em',borderRadius:'0.3em'}}>
+          {/* <Box  component={'h1'} >Crypto Top-up</Box> */}
+         <Box textAlign={'center'} onClick={() => setReveal(!reveal)}  sx={{cursor:'pointer',textDecoration:'underline'}} component={'h5'} color='blue'  >Click To Reveal Wallets</Box>
+        {reveal?<SelectTabs/>:<DepositForm/>}
 
-                    <Typography variant="h5" color='success' textAlign={'center'}>{option.name} {<Typography>{ <option.icon/>} </Typography>} </Typography>
-                   
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
         </Box>
+       
       )}
 
       {/* Modal for QR Code and Address */}
