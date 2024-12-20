@@ -180,7 +180,7 @@ const scrollToViewAndCloseMenu = (scrollToFunction, onCloseFunction) => {
               component="div"
             >
               <Link style={{ textDecoration: "none", color: 'WHITE' }} to='/'>
-              <Box fontWeight={'bold'} fontStyle={'italic'} > <Box component={'span'} color={'#FEBD02'}> MEL</Box><Box component={'span'}>BET</Box> </Box>
+              {/* <Box fontWeight={'bold'} fontStyle={'italic'} > <Box component={'span'} color={'#FEBD02'}> MEL</Box><Box component={'span'}>BET</Box> </Box> */}
             {/* <Box component={'img'} sx={{ width: { xs: '2em', lg: '2.8em' }, paddingBottom: { lg: '0.1em',xs:"0.2em" } }} src={logo} alt="logo" /> */}
               </Link>
             </Typography>

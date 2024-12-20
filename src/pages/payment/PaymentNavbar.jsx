@@ -21,7 +21,7 @@ const PayementNavbar = () => {
                 <Toolbar>
                     {/* Logo */}
                     <Typography sx={{ order: { xs: 1, lg: 1 } }} variant="h3" component="div">
-                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/">
+                        {/* <Link style={{ textDecoration: 'none', color: 'black' }} to="/">
                             <Box
                                 component={'img'}
                                 sx={{
@@ -31,7 +31,7 @@ const PayementNavbar = () => {
                                 src={logo}
                                 alt="logo"
                             />
-                        </Link>
+                        </Link> */}
                     </Typography>
 
                     {/* Navigation Links */}
