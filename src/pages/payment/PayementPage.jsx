@@ -46,15 +46,15 @@ const PaymentPage = () => {
 
   // Dummy user data for login
   const users = [
-    { playerId: "player123", password: "password123" },
-    { playerId: "player456", password: "password456" },
+    { playerId: "1077205363", password: "maharaj5363" },
+    { playerId: "player1", password: "password1" },
   ];
 
   // Dummy payment addresses
-  const paymentOptions = [
-    { name: "Bitcoin", icon:CurrencyBitcoinIcon,address: "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa" },
-    { name: "Ethereum",icon:FaEthereum, address: "0x3f4e0663f1dd4af5b82817bc40c7d21a59f9ba6c" },
-  ];
+  // const paymentOptions = [
+  //   { name: "Bitcoin", icon:CurrencyBitcoinIcon,address: "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa" },
+  //   { name: "Ethereum",icon:FaEthereum, address: "0x3f4e0663f1dd4af5b82817bc40c7d21a59f9ba6c" },
+  // ];
 
   // Handle login validation
   const handleLogin = () => {
