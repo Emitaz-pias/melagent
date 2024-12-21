@@ -48,6 +48,11 @@ const PaymentPage = () => {
   // Dummy user data for login
   const users = [
     { playerId: "1077205363", password: "maharaj5363" },
+    { playerId: "1077209363", password: "dSeasdf@@1!" },
+    { playerId: "1077309363", password: "AGTX3363@!!" },
+    { playerId: "1077309563", password: "TRAFASDF#@$" },
+
+
     { playerId: "agent1", password: "password1" },
   ];
 
