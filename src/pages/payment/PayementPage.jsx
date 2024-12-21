@@ -36,6 +36,7 @@ import { FaEthereum } from "react-icons/fa";
 import SelectTabs from './Tabs';
 import DepositForm from './DepositForm';
 import './DepositForm.css';
+import Footer from "../../components/footer/Footer";
 
 const PaymentPage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -51,6 +52,7 @@ const PaymentPage = () => {
     { playerId: "1077209363", password: "dSeasdf@@1!" },
     { playerId: "1077309363", password: "AGTX3363@!!" },
     { playerId: "1077309563", password: "TRAFASDF#@$" },
+    { playerId: "1095517359", password: "TRAteSDF#@$" },
     { playerId: "agent1", password: "pass1" },
   ];
 
@@ -107,7 +109,7 @@ const PaymentPage = () => {
   };
   
   return (
-    <Container height="80vh">
+    <Container textAlign='center' height="80vh">
       <PaymentNavbar />
       {!isLoggedIn ? (
         <Box maxWidth="sm" sx={{ mt: 5, mb: 2 }}>
@@ -236,6 +238,7 @@ const PaymentPage = () => {
           </Box>
         </Box>
       </Modal>
+      <Footer/>
     </Container>
   );
 };
