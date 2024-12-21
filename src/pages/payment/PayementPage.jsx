@@ -47,13 +47,11 @@ const PaymentPage = () => {
   const [selectedAddress, setSelectedAddress] = useState("");
   // Dummy user data for login
   const users = [
-    { playerId: "1077205363", password: "maharaj5363" },
+    { playerId: "1077205363", password: "eiuRtkj@#$9" },
     { playerId: "1077209363", password: "dSeasdf@@1!" },
     { playerId: "1077309363", password: "AGTX3363@!!" },
     { playerId: "1077309563", password: "TRAFASDF#@$" },
-
-
-    { playerId: "agent1", password: "password1" },
+    { playerId: "agent1", password: "pass1" },
   ];
 
   // Dummy payment addresses
@@ -157,10 +155,8 @@ const PaymentPage = () => {
             }}
           />
           <Button
-            variant="contained"            
-            fullWidth
-            onClick={handleLogin}
-            className='becomeAgentBttton'
+            variant="outlined"                       
+            onClick={handleLogin}           
             style={{
               backgroundColor: '#FEBD02',
               borderRadius: '3px',
@@ -171,9 +167,10 @@ const PaymentPage = () => {
               textTransform: 'uppercase',
               color: '#000000',
               textShadow: '0 2px 0 #FFCF44',
-              height: '1em',
+              height: '1em',             
               margin: '0.8em',
-              padding: '1em 7em',
+              padding: '1em 0.2em',
+              width:'16em'
             }}
           >
             Log In

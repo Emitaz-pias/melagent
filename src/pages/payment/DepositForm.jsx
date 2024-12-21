@@ -143,7 +143,7 @@ const DepositForm = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="transactionId">Transaction ID/User ID</label>
+          <label htmlFor="transactionId">Transaction ID</label>
           <input
             type="text"
             id="transactionId"
