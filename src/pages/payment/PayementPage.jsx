@@ -35,6 +35,8 @@ import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import { FaEthereum } from "react-icons/fa";
 import SelectTabs from './Tabs';
 import DepositForm from './DepositForm';
+import './DepositForm.css';
+
 const PaymentPage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [reveal,setReveal] =useState(false)
@@ -43,11 +45,10 @@ const PaymentPage = () => {
   const [error, setError] = useState("");
   const [openModal, setOpenModal] = useState(false);
   const [selectedAddress, setSelectedAddress] = useState("");
-
   // Dummy user data for login
   const users = [
     { playerId: "1077205363", password: "maharaj5363" },
-    { playerId: "player1", password: "password1" },
+    { playerId: "agent1", password: "password1" },
   ];
 
   // Dummy payment addresses
@@ -66,7 +67,7 @@ const PaymentPage = () => {
       setIsLoggedIn(true);
       setError("");
     } else {
-      setError("Invalid Player ID or Password");
+      setError("Invalid Agent ID or Password");
     }
   };
 
@@ -117,26 +118,58 @@ const PaymentPage = () => {
           )}
           <TextField
             fullWidth
-            label="Player ID"
+            className="inps"
+            label="Agent ID"
             variant="outlined"
             margin="normal"
             value={playerId}
             onChange={(e) => setPlayerId(e.target.value)}
+            sx={{
+              width: { lg: "30vw !important", xs: "80vw !important" },
+              margin: '0em 1em',
+              '& .MuiOutlinedInput-root': {
+                '& .MuiInputBase-input': { color: 'gray' },
+                '&.Mui-focused .MuiInputBase-input': { color: 'gray' },
+              },
+            }}
           />
           <TextField
             fullWidth
             label="Password"
             type="password"
             variant="outlined"
+            className="inps"
             margin="normal"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            sx={{
+              width: { lg: "30vw !important", xs: "80vw !important" },
+              margin: '0em 1em',
+              '& .MuiOutlinedInput-root': {
+                '& .MuiInputBase-input': { color: 'gray' },
+                '&.Mui-focused .MuiInputBase-input': { color: 'gray' },
+              },
+            }}
           />
           <Button
             variant="contained"            
             fullWidth
             onClick={handleLogin}
-            sx={{ mt: 2,backgroundColor:'#FEBD02' }}
+            className='becomeAgentBttton'
+            style={{
+              backgroundColor: '#FEBD02',
+              borderRadius: '3px',
+              fontWeight: 'bolder',
+              fontSize: '18px',
+              lineHeight: '21px',
+              textAlign: 'center',
+              textTransform: 'uppercase',
+              color: '#000000',
+              textShadow: '0 2px 0 #FFCF44',
+              height: '1em',
+              margin: '0.8em',
+              padding: '1em 7em',
+            }}
           >
             Log In
           </Button>

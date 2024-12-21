@@ -74,6 +74,8 @@ import React from "react";
 import { AppBar, Toolbar, Box, IconButton } from "@mui/material";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import logo from '../../images/newlogo.png'
+import { Link } from "react-router-dom";
+
 const PaymentNavbar = () => {
   return (
     <AppBar
@@ -92,8 +94,8 @@ const PaymentNavbar = () => {
         }}
       >
         {/* Logo Section */}
-        <Box component="img" src={logo} alt="Logo" sx={{ width: 100 }} />
-
+<Link to='/'>        <Box component="img" src={logo} alt="Logo" sx={{ width: 100 }} />
+</Link>
         {/* Notification Icon */}
         <IconButton
           sx={{ color: "#FEBD02" }}
